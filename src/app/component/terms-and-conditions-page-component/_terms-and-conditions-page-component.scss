@@ -1,0 +1,30 @@
+terms-and-conditions h2{
+    font-size: 1.4em;
+    text-align: center;
+    @media only screen and (min-width: $tablet) {
+        font-size: 1.8em;
+        text-align: left;
+    }
+    @media only screen and (min-width: $desktop) {
+        font-size: 1.8em;
+        text-align: left;
+    }
+}
+
+.terms-and-conditions{
+    min-height: 500px;
+    width: 80%;
+    margin: 9px auto 0px;
+    @media only screen and (min-width: $tablet) {
+        width: 80%;
+    }
+    @media only screen and (min-width: $desktop) {
+        width: 60%;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        width: 60%;
+    }
+    &__paragraph{
+        margin-bottom: 16px;
+    }
+}

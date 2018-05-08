@@ -1,0 +1,89 @@
+
+order-tracking h2{
+    font-size: 1.8em;
+    margin-top: 0px;
+}
+
+.order-tracking {
+    min-height: 500px;
+    width: 80%;
+    margin: 5px auto 0px;
+    text-align: center;
+    &__track-button{
+        height: 61px;
+        width: 230px; 
+        position: relative;
+        margin: 2px auto 110px;
+        text-align: center;
+        line-height: 61px;
+        cursor: pointer;
+        @include button-style-primary;
+        @media only screen and (min-width: $tablet) {
+            width: 278px; 
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 278px; 
+        }
+    }
+    &__input {
+        height: 45px;
+        width: 70%;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0px auto 30px;
+        border-radius: 3px;
+        border:none;
+        border-bottom: 1px solid grey;
+        line-height: normal;
+        color: grey;
+        font-size: 0.8rem;
+        @media only screen and (min-width: $tablet) {
+            width: 50%;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 1rem;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 40%;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 1rem;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 40%;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 1rem;
+        }
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__loader {
+        position: absolute;
+        top: 6px;
+        right: 26px;
+        @media only screen and (min-width: $tablet) {
+            right: 46px;
+        }
+    }
+}
+
+//placeholder browser styles
+::-webkit-input-placeholder { 
+    color: lightgrey;
+}
+:-moz-placeholder { 
+    color: lightgrey;
+   opacity:  1;
+}
+::-moz-placeholder {
+    color: lightgrey;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+    color: lightgrey;
+}
+::-ms-input-placeholder { 
+   color: lightgrey;
+}

@@ -1,0 +1,7 @@
+<div id="poster-container" class="poster-container clearfix">
+    <div class="poster-container__inner" style="left:0px;" custom-swipe poster-length="$ctrl.postersData.length">
+        <poster ng-repeat="poster in $ctrl.postersData" class="poster-container__poster" poster="poster"></poster>
+    </div>
+    <div class="loadingSpinner" ng-show="$ctrl.showLoadingSpinner"></div>
+</div>
+<div class="errors" ng-repeat="errorMessage in $ctrl.errors">{{ errorMessage }}</div>

@@ -1,0 +1,13 @@
+<div class="url-input-container">
+    <div class="url-input-container__input-container">
+        <input type="text" class="url-input-container__input" ng-model="$ctrl.urlInput" placeholder="{{$ctrl.placeholder}}">
+    </div>
+    <div class="url-input-container__button-container">
+        <div class="url-input-container__button" ng-click="$ctrl.postTweet()">
+            <span class="url-input-container__button-text">Instantly create your own</span>
+            <i class="fa fa-pencil-square-o url-input-container__icon" aria-hidden="true" ng-hide="$ctrl.toggleButtonLoader"></i>
+            <div class="buttonSpinner" ng-show="$ctrl.toggleButtonLoader"></div>
+        </div>
+    </div>
+    <div class="errors" ng-repeat="errorMessage in $ctrl.errors">{{ errorMessage }}</div>
+</div>

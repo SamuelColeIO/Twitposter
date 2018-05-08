@@ -1,0 +1,27 @@
+.loadingSpinner {
+  height: 20px;
+  width: 20px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #F9593A;
+  border-bottom: 8px solid #F9593A;
+
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 2%;
+  left: 45%;
+  @media only screen and (min-width: $desktop) {
+    left: 49%;
+}
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

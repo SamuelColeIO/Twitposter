@@ -1,0 +1,64 @@
+confirmation hr{
+    height: 2px;
+    width: 180px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    @media only screen and (min-width: $tablet) {
+        width: 200px;
+    }
+    @media only screen and (min-width: $desktop) {
+        width: 220px;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        width: 250px;
+    }
+}
+
+.confirmation-message{
+    &__inner{
+        width: 70%;
+        margin: 16px auto 2px;
+        text-align: center;
+        @media only screen and (min-width: $tablet) {
+            width: 50%;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 30%;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 20%;
+        }
+    }
+    &__inner:last-child {
+        margin: 8px auto 20px;
+    }
+}
+
+.multi-poster-container {
+    height: 820px;
+    width: 100%;
+    margin: 0px auto 0px;
+    @media only screen and (min-width: $tablet) {
+        height: 470px;
+        width: 650px;
+    }
+    @media only screen and (min-width: $desktop) {
+        height: 630px;
+        width: 920px;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        height: 630px;
+        width: 920px;
+    }
+}
+
+.create-another-button{
+    height: 40px;
+    width: 200px;
+    margin: 23px auto 20px;
+    line-height: 41px;
+    cursor: pointer;
+    @include button-style-tertiary;
+}

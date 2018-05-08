@@ -1,0 +1,16 @@
+@mixin button-style-primary {
+    border-radius: 50px;
+    background-color: #F9593A;
+}
+
+@mixin button-style-secondary {
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.71);
+    color: #4A90E2;
+}
+
+@mixin button-style-tertiary {
+    border-radius: 50px;
+    background-color: #8A8989;
+    font-size: 0.7rem;
+}

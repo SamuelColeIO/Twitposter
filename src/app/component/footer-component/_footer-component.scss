@@ -1,0 +1,79 @@
+footer-component a {
+    text-decoration: underline;
+}
+
+footer-component h4 {
+    font-size: 1.1em;
+}
+
+.footer {
+    height: 320px;
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    background-color: white;
+    color: #4D8BDB;
+    @media only screen and (min-width: $desktop) {
+        height: 167px;
+    }
+    &__container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__logo {
+        display: none;
+        @media only screen and (min-width: $desktop) {
+            width: 20%;
+            padding: 5px;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            text-align:right;
+        }
+    }
+    &__logo-img {
+        height: 116px;
+        border-style:none; /* for IE7-9 */
+    }
+    &__delivery {
+        width: 100%;
+        text-align: center;
+        @media only screen and (min-width: $desktop) {
+            width: 50%;
+            padding: 5px;
+            box-sizing: border-box;
+            float: left;
+            text-align: left;
+        }
+    }
+    &__terms-and-conditions {
+        display: block;
+        margin-bottom: 16px;
+        @media only screen and (min-width: $desktop) {
+            margin-right: 8px;
+            padding-right: 10px;
+            border-right: 1px solid #4D8BDB;
+            display: inline;
+        }
+    }
+    &__contact {
+        width: 100%;
+        text-align: center;
+        @media only screen and (min-width: $desktop) {
+            width: 30%;
+            padding: 5px;
+            box-sizing: border-box;
+            float: left;
+            text-align: left;
+        }
+    }
+}
+
+//clearfix
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }

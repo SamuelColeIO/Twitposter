@@ -1,0 +1,282 @@
+poster hr {
+    height: 0.25%;
+    width: 94%;
+    margin: 0;
+    margin-left: 3%;
+    border: none;
+    background-color: #E5E5E5;
+}
+
+.poster {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: Aileron;
+    color: white;
+    &__device-header {
+        height: 5%;
+        position: relative;
+        background-color: #55acee;
+        font-size: 0px;
+    }
+    &__circle-closed-icon-1 {
+        height: 100%;
+        width: 2%;
+        margin-left: 3%;
+        display: inline-block;
+    }
+    &__circle-closed-icon-2 {
+        height: 100%;
+        width: 2%;
+        display: inline-block;
+    }
+    &__circle-closed-icon-3 {
+        height: 100%;
+        width: 2%;
+        display: inline-block;
+    }
+    &__circle-open-icon-1 {
+        height: 100%;
+        width: 2%;
+        display: inline-block;
+    }
+    &__circle-open-icon-2 {
+        height: 100%;
+        width: 2%;
+        display: inline-block;
+    }
+    &__wifi-icon {
+        height: 100%;
+        width: 5%;
+        margin-left: 1%;
+        display: inline-block;
+    }
+    &__time-container {
+        width: 61.5%;
+        display: inline-block;
+    }
+    &__time {
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        font-size: medium;
+        line-height: 1px;
+    }
+    &__bluetooth-icon {
+        height: 100%;
+        width: 3.5%;
+        margin-right: 1%;
+        display: inline-block;
+    }
+    &__battery-percent-container {
+        display: inline-block;
+        width: 7%;
+    }
+    &__battery-percent {
+        position: absolute;
+        top: 48%;
+        right: 9.5%;
+        font-size: medium;
+        line-height: 1px;
+    }
+    &__battery-icon {
+        height: 100%;
+        width: 5%;
+        display: inline-block;
+    }
+    &__header {
+        height: 10.5%;
+        position: relative;
+        background-color: #55acee;
+        font-size: 0px;
+    }
+    &__chevron-icon {
+        height: 100%;
+        width: 7%;
+        margin-left: 2%;
+        display: inline-block;
+    }
+    &__tweet-heading-container{
+        height: 100%;
+        width: 66%;
+        display: inline-block;
+    }
+    &__tweet-heading {
+        position: absolute;
+        top: 27%;
+        left: 41%;
+        font-size: medium;
+    }
+    &__search-icon {
+        height: 100%;
+        width: 8%;
+        margin-left: 3%;
+        display: inline-block;
+    }
+    &__edit-icon {
+        height: 95%;
+        width: 8%;
+        margin-left: 3%;
+        display: inline-block;
+    }
+    &__main-content {
+        height: 59%;
+        position: relative;
+        font-size: 0px;
+    }
+    &__main-content-top {
+        height: 31%;
+    }
+    &__poster-image{
+        height: 21%;
+        width: 16.5%;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        background-color: lightgrey;
+    }
+    &__poster-id {
+        position: absolute;
+        top: 6%;
+        left: 23%;
+        font-size: medium;
+        font-weight: bold;
+        color: #292f33;
+    }
+    &__poster-atId {
+        position: absolute;
+        top: 13%;
+        left: 23%;
+        font-size: medium;
+        font-weight: 600;
+        color: #A4AFBC;
+    }
+    &__plus-icon {
+        height: 40%;
+        width: 3%;
+        margin-left: 85%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__user-icon {
+        height: 38%;
+        width: 7%;
+        margin-top: 3%;
+        margin-left: -1%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__rectangle {
+        width: 16%;
+        height: 11%;
+        position: absolute;
+        top: 4%;
+        right: 3%;
+        border-radius: 6% 6%;
+        background-color: #55acee;
+        z-index: 1;
+    }
+    &__rectangle:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        width: 91%;
+        height: 85.5%;
+        border-radius: 2%;
+        background-color: white;
+        z-index: 2;
+    }
+    &__tweet-text {
+        padding-left: 3%;
+        padding-right: 3%;
+        font-weight: 300;
+        line-height: normal !important;
+        white-space: normal;
+        color: #292f33;
+        &--link {
+            color: #0084B4;
+        }
+    }
+    &__post-time {
+        padding-top: 3%;
+        padding-left: 3%;
+        font-size: medium;
+        font-weight: 600;
+        color: #A4AFBC;
+    }
+    &__statistics {
+        height: 12%;
+        position: relative;
+    }
+    &__retweets {
+        margin-top: 5%;
+        margin-left: 3%;
+        display: inline-block;
+        line-height: normal !important;
+        color: #A4AFBC;
+    }
+    &__favorites {
+        margin-top: 6%;
+        margin-left: 2%;
+        display: inline-block;
+        line-height: normal !important;
+        color: #A4AFBC;
+    }
+    &__buttons {
+        height: 12%;
+        position: relative;
+        font-size: 0px;
+    }
+    &__return-icon {
+        height: 100%;
+        width: 8%;
+        margin-left: 10%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__retweet-icon {
+        height: 100%;
+        width: 8%;
+        margin-left: 15%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__star-icon {
+        height: 100%;
+        width: 8%;
+        margin-left: 14%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__ellipsis-1 {
+        height: 100%;
+        width: 3%;
+        margin-left: 14%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__ellipsis-2 {
+        height: 100%;
+        width: 3%;
+        margin-left: 2%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }  
+    &__ellipsis-3 {
+        height: 100%;
+        width: 3%;
+        margin-left: 2%;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    } 
+}

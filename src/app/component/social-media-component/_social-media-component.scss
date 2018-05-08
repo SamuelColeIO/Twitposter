@@ -1,0 +1,15 @@
+.social-media-container {
+    height: 55px;
+    width: 201px;
+    margin: 20px auto 2px;
+
+    &__icon {
+        height: 51px;
+        width: 51px;
+        float: left;
+        margin-left: 24px;
+    }
+    &__icon:first-child {
+        margin-left: 0px;
+    }
+}

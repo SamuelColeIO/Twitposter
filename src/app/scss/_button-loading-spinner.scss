@@ -1,0 +1,13 @@
+.buttonSpinner {
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 1px;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #55acee;
+  border-bottom: 6px solid #55acee;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}

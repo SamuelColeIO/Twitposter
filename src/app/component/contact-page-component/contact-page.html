@@ -1,0 +1,34 @@
+<logo-subheading-component subheading-toggle="true"></logo-subheading-component>
+<div class="contact-form-container">
+
+    <form name="contactForm" novalidate>
+        <div class="contact-form-container__inner">
+            <div class="contact-form-container__inner-email">
+                <label class="contact-form-container__label-email">Email
+                </label>
+                <input type="email"
+                    class="contact-form-container__input contact-form-container__input-email"
+                    ng-model="$ctrl.contact.from"
+                    required>
+            </div>
+            <div class="contact-form-container__inner-subject">
+                <label class="contact-form-container__label-subject">Subject
+                </label>
+                <input type="text"
+                    class="contact-form-container__input contact-form-container__input-subject"
+                    ng-model="$ctrl.contact.subject">
+            </div>
+            <label class="contact-form-container__label-description">Message
+            </label>
+            <textarea type="text"
+                class="contact-form-container__input contact-form-container__input-description"
+                ng-model="$ctrl.contact.message">
+            </textarea>
+        </div>
+        <div ng-click="$ctrl.submitForm(contactForm.$valid)" 
+            class="contact-form-container__submit-button">Send Message
+        </div>
+    </form>
+</div>
+<div class="contact-form-container__error" ng-show="$ctrl.contact.error">Please ensure you have used a correct email address.</div>
+<footer-component></footer-component>

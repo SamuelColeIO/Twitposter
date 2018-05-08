@@ -1,0 +1,11 @@
+<logo-subheading-component subheading-toggle="true"></logo-subheading-component>
+<div class="order-tracking">
+    <h2 class="order-tracking__title">Order Tracking</h2>
+    <input type="text" class="order-tracking__input" ng-model="$ctrl.urlInput" placeholder="{{$ctrl.placeholder}}">
+    <div ng-click="$ctrl.trackOrder()"  class="order-tracking__track-button">
+        <span>TRACK ORDER</span>
+        <div class="buttonSpinner order-tracking__loader" ng-show="$ctrl.toggleButtonLoader"></div>
+    </div>
+    <div class="errors" ng-repeat="errorMessage in $ctrl.errors">{{ errorMessage }}</div>
+</div>
+<footer-component></footer-component>

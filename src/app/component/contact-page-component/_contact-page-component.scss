@@ -1,0 +1,146 @@
+.contact-form-container {
+    min-height: 500px;
+    width: 85%;
+    margin: 10px auto 2px;
+    border-radius: 50px;
+    @media only screen and (min-width: $tablet) {
+        width: 90%;
+    }
+    @media only screen and (min-width: $desktop) {
+        width: 820px;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        width: 820px;
+    }
+    &__inner {
+        width: auto;
+    }
+    &__inner-email  {
+        width: 100%;
+        float: none;
+        @media only screen and (min-width: $tablet) {
+            width: 100%;
+            float: none;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 420px;
+            float: left;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 420px;
+            float: left;
+        }
+    }
+    &__inner-subject  {
+        width: 100%;
+        float: none;
+        @media only screen and (min-width: $tablet) {
+            width: 100%;
+            float: none;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 400px;
+            float: left;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 400px;
+            float: left;
+        }
+    }
+    &__label-email, &__label-subject {
+        width: 45px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__label-subject {
+        width: 50px;
+    }
+    &__label-description {
+        display: block;
+        width: 20%;
+        margin-bottom: 10px;
+ 
+    }
+    &__input {
+        height: 40px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid grey;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__input-email, &__input-subject {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        @media only screen and (min-width: $tablet) {
+            width: 100%;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 380px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 380px;
+        }
+    }
+    &__input-email {
+        margin-right: 20px;
+    }
+    &__input-description {
+        height: 100px;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        resize: none;
+        overflow: auto;
+        font-family: 'Roboto', sans-serif;
+        @media only screen and (min-width: $tablet) {
+            width: 100%;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 800px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 800px;
+        }
+    }
+    &__submit-button {
+        height: 61px;
+        width: 278px;
+        margin: 0px auto 30px;
+        text-align: center;
+        line-height: 59px;
+        cursor: pointer;
+        @include button-style-primary;
+        @media only screen and (min-width: $tablet) {
+            height: 61px;
+            width: 278px;
+        }
+        @media only screen and (min-width: $desktop) {
+            height: 61px;
+            width: 278px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            height: 61px;
+            width: 278px;
+        }
+    }
+    &__error {
+        width: 340px;
+        margin: 0px auto 0px;
+        text-align: center;
+        @media only screen and (min-width: $tablet) {
+            width: 430px;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 750px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 750px;
+        }
+    }
+}

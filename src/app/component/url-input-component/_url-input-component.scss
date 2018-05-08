@@ -1,0 +1,159 @@
+.url-input-container {
+    height: 140px;
+    width: 100%;
+    padding-top: 10px;
+    @media only screen and (min-width: $tablet) {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    @media only screen and (min-width: $desktop) {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    &__input-container {
+        width: 90%;
+        margin: 0px auto 0px;
+        @media only screen and (min-width: $tablet) {
+            width: 585px;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 585px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 585px;
+        }
+    }
+    &__input {
+            border-radius: 50px;
+            border:none;
+            height: 45px;
+            width: 100%;
+            line-height: normal;
+            color: grey;
+            padding-left: 25px;
+            padding-right: 25px;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+            @media only screen and (min-width: $tablet) {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 1rem;
+            }
+            @media only screen and (min-width: $desktop) {
+                width: 100%;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 1rem;
+            }
+            @media only screen and (min-width: $large-desktop) {
+                width: 100%;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 1rem;
+            }
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__button-container {
+        height: 50px;
+        width: 70%;
+        margin: 0px auto 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 50px;
+        @media only screen and (min-width: $tablet) {
+            width: 45%;
+            padding-top: 25px;
+        }
+        @media only screen and (min-width: $desktop) {
+            width: 411px;
+            padding-top: 25px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            width: 411px;
+            padding-top: 25px;
+        }
+    }
+    &__button{
+        height: 100%;
+        width: 100%;
+        padding-top: 2px;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 47px;
+        cursor: pointer;
+        @include button-style-primary;
+        @media only screen and (min-width: $tablet) {
+            font-size: 1.7rem;
+        }
+        @media only screen and (min-width: $desktop) {
+            font-size: 1.7rem;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            font-size: 1.7rem;
+        }
+    }
+    &__button-text{
+        margin-right: 1%;
+        padding-right: 3%;
+        border-right: 1px solid white;
+        font-size: 0.8rem;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: top;
+        @media only screen and (min-width: $tablet) {
+            margin-right: 3%;
+            font-size: 1.2rem;
+        }
+        @media only screen and (min-width: $desktop) {
+            margin-right: 3%;
+            font-size: 1.2rem;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            margin-right: 3%;
+            font-size: 1.2rem;
+        }
+    }
+    &__icon {
+        padding-top: 15px;
+        vertical-align: top;
+        font-size: 120px;
+        @media only screen and (min-width: $tablet) {
+            padding-top: 11px;
+            font-size: 120px;
+        }
+        @media only screen and (min-width: $desktop) {
+            padding-top: 11px;
+            font-size: 120px;
+        }
+        @media only screen and (min-width: $large-desktop) {
+            padding-top: 11px;
+            font-size: 120px;
+        }
+    }
+}
+//placeholder browser styles
+::-webkit-input-placeholder { 
+    color: lightgrey;
+}
+:-moz-placeholder { 
+    color: lightgrey;
+   opacity:  1;
+}
+::-moz-placeholder {
+    color: lightgrey;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+    color: lightgrey;
+}
+::-ms-input-placeholder { 
+   color: lightgrey;
+}

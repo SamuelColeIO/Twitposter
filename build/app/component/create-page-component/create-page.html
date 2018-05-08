@@ -1,0 +1,14 @@
+<logo-subheading-component subheading-toggle="false"></logo-subheading-component>
+<social-media-component></social-media-component>
+<div class="multi-poster-container clearfix">
+  <large-poster-component poster="$ctrl.poster" show-loading-spinner="$ctrl.showLargePosterLoader"></large-poster-component>
+  <wall-poster-component show-loading-spinner="$ctrl.showWallPosterLoader"></wall-poster-component>
+</div>
+<div class="buy-now-button" ng-click="$ctrl.buyPoster()">BUY NOW {{ $ctrl.currentPrice }}</div>
+<div class="errors" ng-show="$ctrl.errors.length">{{ $ctrl.errors }}</div>
+<div class="create-another-button" ng-click="$ctrl.createAnother()">Create another</div>
+<hr>
+<h3>POPULAR POSTERS</h3>
+<popular-container-component posters-data="$ctrl.popularPosters" show-loading-spinner="$ctrl.showPopularLoader"></popular-container-component>
+<h3>YOU RECENTLY MADE</h3>
+<popular-container-component posters-data="$ctrl.recentPosters" show-loading-spinner="$ctrl.showRecentLoader"></popular-container-component>

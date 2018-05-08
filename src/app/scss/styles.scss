@@ -1,0 +1,176 @@
+@import '_variables';
+@import '_mixins';
+@import '_loading-spinner';
+@import '_button-loading-spinner';
+@import '../component/logo-subheading-component/_logo-subheading-component';
+@import '../component/url-input-component/_url-input-component';
+@import '../component/footer-component/_footer-component';
+@import '../component/social-media-component/_social-media-component';
+@import '../component/create-page-component/_create-page-component';
+@import '../component/confirmation-page-component/_confirmation-page-component';
+@import '../component/terms-and-conditions-page-component/_terms-and-conditions-page-component';
+@import '../component/privacy-policy-page-component/_privacy-policy-page-component';
+@import '../component/contact-page-component/_contact-page-component';
+@import '../component/popular-container-component/_popular-container-component';
+@import '../component/order-tracking-page-component/_order-tracking-page-component';
+@import '../component/wall-poster-component/_wall-poster-component';
+@import '../component/poster-component/_poster';
+@import '../component/large-poster-component/_large-poster-component';
+
+@import '../component/poster-test-page-component/_poster-test-page';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+@font-face {
+	font-family: 'Solitude';
+	src: url('Solitude.eot');
+	src: url('Solitude.eot?#iefix') format('embedded-opentype'),
+		url('Solitude.woff') format('woff'),
+		url('Solitude.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aileron';
+	src: url('Aileron-Light.eot');
+	src: url('Aileron-Light.eot?#iefix') format('embedded-opentype'),
+		url('Aileron-Light.woff') format('woff'),
+		url('Aileron-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aileron';
+	src: url('Aileron-SemiBold.eot');
+	src: url('Aileron-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('Aileron-SemiBold.woff') format('woff'),
+		url('Aileron-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aileron';
+	src: url('Aileron-Bold.eot');
+	src: url('Aileron-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Aileron-Bold.woff') format('woff'),
+		url('Aileron-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+html {
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding-bottom: 20px;
+    background-image: linear-gradient(-180deg, #00D2FF 0%, #3A7BD5 100%);
+    background: -webkit-linear-gradient(top, #00d2ff 0%, #3a7bd5 100%);/*For Safari*/
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00d2ff', endColorstr='#3a7bd5');/*For IE7-8-9*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+h1 {
+    font-weight: 100;
+}
+
+.track-order-button{
+    height: 48px;
+    width: 172px;
+    position: absolute;
+    text-align: center;
+    line-height: 47px;
+    top: 4%;
+    right: 1%;
+   @include button-style-secondary;
+   cursor: pointer;
+   @media only screen and (min-width: $tablet) {
+    top: 3%;
+    right: 1%;
+    }
+    @media only screen and (min-width: $desktop) {
+    top: 1%;
+    right: 1%;
+    }
+    @media only screen and (min-width: $large-desktop) {
+    top: 1%;
+    right: 1%;
+    }
+}
+
+.track-order-caret{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 30px;
+    cursor: pointer;
+    @media only screen and (min-width: $tablet) {
+        display: none;
+    }
+    @media only screen and (min-width: $desktop) {
+        display: none;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        display: none;
+    }
+}
+
+.bg-image-1-container{
+    width: 90%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    z-index: -2;
+}
+
+.bg-image-2-container{
+    width: 20%;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    z-index: -2;
+    left: 80%;
+    @media only screen and (min-width: $tablet) {
+        width: 30%;
+        left: 70%;
+    }
+    @media only screen and (min-width: $desktop) {
+        width: 30%;
+        left: 70%;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        width: 25%;
+        left: 75%;
+    }
+}
+
+.errors{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+}

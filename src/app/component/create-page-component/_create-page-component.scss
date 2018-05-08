@@ -1,0 +1,59 @@
+create hr {
+    height: 1px;
+    width: 70%;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+create h3 {
+    text-align: center;
+}
+
+.multi-poster-container {
+    height: 820px;
+    width: 100%;
+    margin: 0px auto 0px;
+    @media only screen and (min-width: $tablet) {
+        height: 470px;
+        width: 650px;
+    }
+    @media only screen and (min-width: $desktop) {
+        height: 630px;
+        width: 920px;
+    }
+    @media only screen and (min-width: $large-desktop) {
+        height: 630px;
+        width: 920px;
+    }
+}
+
+.buy-now-button{
+    height: 50px;
+    width: 240px;
+    margin: 20px auto 2px;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+    @include button-style-primary;
+}
+
+.create-another-button{
+    height: 40px;
+    width: 200px;
+    margin: 23px auto 2px;
+    text-align: center;
+    line-height: 41px;
+    cursor: pointer;
+    @include button-style-tertiary;
+}
+
+//clearfix
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: left;
+ }

@@ -1,0 +1,13 @@
+<logo-subheading-component subheading-toggle="true"></logo-subheading-component>
+<url-input-component placeholder="'Paste here a link to tweet'"></url-input-component>
+<h3>POPULAR POSTERS</h3>
+<popular-container-component posters-data="$ctrl.popularPosters" errors="$ctrl.popularErrors" show-loading-spinner="$ctrl.showPopularLoader"></popular-container-component>
+<h3>YOU RECENTLY MADE</h3>
+<popular-container-component posters-data="$ctrl.recentPosters" errors="$ctrl.recentErrors" show-loading-spinner="$ctrl.showRecentLoader"></popular-container-component>
+<footer-component></footer-component>
+<div class="track-order-caret" ng-click="$ctrl.showTrackOrderButton = !$ctrl.showTrackOrderButton">
+    <i class="fa fa-caret-down"
+        ng-class="$ctrl.showTrackOrderButton ? 'fa fa-caret-up' : 'fa fa-caret-down'"
+        aria-hidden="true"></i>
+</div>
+<div class="track-order-button" ng-show="$ctrl.showTrackOrderButton">TRACK ORDER</div>
